@@ -1,0 +1,45 @@
+{
+  "benchmark_suite_version": "1.0.0",
+  "tested_hardware": {
+    "cpu": "Intel(R) Core(TM) i5-1235U (12 Cores)",
+    "os": "Arch Linux (Kernel 6.16.x)",
+    "architecture": "x86_64",
+    "compiler": "rustc 1.85.0 (release mode with LTO)"
+  },
+  "benchmarks": [
+    {
+      "tier": "Tokenectomy OSS",
+      "test_name": "Quarter-Million Log Redaction Torture",
+      "date": "2026-09-05",
+      "lines_processed": 250000,
+      "buffer_size_mb": 24.44,
+      "execution_time_ms": 333.49,
+      "throughput_lines_per_sec": 749652,
+      "throughput_mb_per_sec": 73.3,
+      "redos_50k_time_ms": 1.445,
+      "concurrency_100_threads_time_ms": 27.35,
+      "concurrency_ops_per_sec": 7312.7,
+      "peak_vmrss_mb": 86.98,
+      "status": "PASSED"
+    },
+    {
+      "tier": "Tokenectomy Pro",
+      "test_name": "One Million Lines Log Surgery Torture",
+      "date": "2026-09-05",
+      "lines_processed": 1000002,
+      "buffer_size_mb": 82.99,
+      "raw_tokens_processed": 19500032,
+      "cleaned_tokens": 10000053,
+      "tokens_scrubbed_pct": 48.72,
+      "execution_time_seconds": 27.36,
+      "throughput_lines_per_sec": 36549,
+      "throughput_mb_per_sec": 3.0,
+      "redos_50k_time_ms": 6.505,
+      "concurrency_100_threads_time_ms": 135.26,
+      "concurrency_ops_per_sec": 2218.0,
+      "atomic_50_files_rollback_ms": 5.52,
+      "ast_150_levels_recursion_ms": 36.684,
+      "status": "PASSED"
+    }
+  ]
+}
