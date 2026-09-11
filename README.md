@@ -53,7 +53,7 @@ Every developer can independently verify these numbers on their physical machine
 
 ```bash
 # 1. Reproduce OSS Quarter-Million Lines Benchmark (750k lines/sec)
-git clone https://github.com/daffa2555/Tokenectomy.git
+git clone https://github.com/Tokenectomy-Labs/Tokenectomy.git
 cd Tokenectomy
 cargo test --release --test stress_benchmark -- --nocapture
 
